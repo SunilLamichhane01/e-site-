@@ -5,6 +5,7 @@ const CartPage = () => {
   const ShowButton = () => {
     setShow(!show);
   };
+
   return (
     <section>
       <div className="mt-10 min-h-screen flex flex-col items-center">

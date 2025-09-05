@@ -47,9 +47,9 @@ const ProductHero = () => {
               </p>
               <Link
                 to={`/product/${product.slug}`}
-                className="mt-auto bg-green-500 text-white py-2 rounded-md hover:bg-green-700 transition"
+                className="mt-auto bg-green-500 h-9 mt-2 text-white text-center rounded-md hover:bg-green-700 transition"
               >
-                Add to Cart
+                <p className="mt-2">Add to Cart</p>
               </Link>
             </div>
           </div>

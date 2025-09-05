@@ -1,5 +1,6 @@
 import CategoriesPage from "./categories/CategoriesHero";
 import ContactUs from "./contact-us";
+import Blogs from "./home/blogs";
 import FlashSale from "./home/flash-sale";
 import HomeHero from "./home/homehero";
 import OtherInformation from "./home/other-information";
@@ -31,6 +32,9 @@ const HomePage = () => {
       </div>
       <div>
         <OtherInformation />
+      </div>
+      <div>
+        <Blogs />
       </div>
 
       <div>

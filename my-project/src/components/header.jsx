@@ -11,7 +11,7 @@ const NavList = [
   { id: 1, name: "Home", path: "/", icon: <FaHome /> },
   { id: 2, name: "Product", path: "/product", icon: <FiShoppingCart /> },
   { id: 3, name: "Categories", path: "/categories", icon: <FiShoppingCart /> },
-  { id: 5, name: "Cart", path: "/cart", icon: <GrCart /> },
+  { id: 5, name: "Cart", path: "/addToCart", icon: <GrCart /> },
   { id: 6, name: "Contact", path: "/contact", icon: <MdAccountCircle /> },
 ];
 

@@ -40,15 +40,18 @@ const CategoriesPage = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {categories.map((items) => (
-          <div
+          <Link
+            to={`/category/${items.name}`}
             key={items.id}
             className="group block border rounded-xl overflow-hidden shadow hover:shadow-lg transition"
           >
-            <img
-              src={items.image}
-              alt={items.name}
-              className="w-full h-fulls object-cover group-hover:scale-105 transition-transform duration-300"
-            />
+            <div className="w-full h-48 overflow-hidden">
+              <img
+                src={items.image}
+                alt={items.name}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
             <div className="p-4 text-center">
               <h2 className="text-lg font-semibold capitalize group-hover:text-green-600 transition">
                 {items.name}
@@ -57,7 +60,7 @@ const CategoriesPage = () => {
                 {items.price}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
